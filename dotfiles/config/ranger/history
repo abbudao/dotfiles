@@ -1,0 +1,15 @@
+open_with 
+open_with lk
+open_with kkl
+shell set colorscheme solarized
+
+set colorscheme jungle
+set colorscheme default
+set colorscheme solarized
+set colorscheme snow
+open_with kk
+search t
+search test
+search uglist
+search Q
+open_with mpv

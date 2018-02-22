@@ -1,0 +1,91 @@
+! COLOR PALETTE HERE !
+#define my_foreground   #c5c8c6
+#define my_background   #1e1e20
+#define my_cursorColor  #c5c8c6
+#define my_cursor       #ead49b
+#define my_color0       #1e1e20
+#define my_color1       #e6a57a
+#define my_color2       #e39866
+#define my_color3       #df8b54
+#define my_color4       #dc7f41
+#define my_color5       #c6723a
+#define my_color6       #b06534
+#define my_color7       #f1cbb3
+#define my_color8       #f4d8c6
+#define my_color9       #e6a57a
+#define my_color10      #e39866
+#define my_color11      #df8b54
+#define my_color12      #dc7f41
+#define my_color13      #c6723a
+#define my_color14      #b06534
+#define my_color15      #f1cbb3
+
+*.foreground:   my_foreground  
+*.background:   my_background  
+*.cursorColor:  my_cursorColor 
+*.cursor:       my_cursor      
+*.color0:       my_color0      
+*.color1:       my_color1      
+*.color2:       my_color2      
+*.color3:       my_color3      
+*.color4:       my_color4      
+*.color5:       my_color5      
+*.color6:       my_color6      
+*.color7:       my_color7      
+*.color8:       my_color8      
+*.color9:       my_color9      
+*.color10:      my_color10     
+*.color11:      my_color11     
+*.color12:      my_color12     
+*.color13:      my_color13     
+*.color14:      my_color14     
+*.color15:      my_color15     
+
+
+
+*fading:                15
+*fadeColor:             black
+*pointerColorBackground:#2B2C2B
+*pointerColorForeground:#16A085
+
+Xcursor.theme: Maia-Cursor
+Xcursor.size:  0
+
+XTerm*background: #6aa7a5
+XTerm*foreground: #6aa7a5
+XTerm*reverseVideo: on
+XTerm*faceName: HackRegular:size=11:antialias=true
+XTerm*selectToClipboard: true
+
+! URxvt SETUP HERE !
+URxvt.internalBorder: 6
+URxvt.font: xft:monofur:size=12
+URxvt.depth: 32
+URxvt.background:	[100]my_background
+URxvt*scrollBar:                      false
+URxvt*mouseWheelScrollPage:           false
+URxvt*cursorBlink:                    true
+URxvt*foreground: 		                my_foreground
+URxvt*cursorColor:		                my_foreground
+URxvt*saveLines:                      5000
+
+! ROFI SETUP HERE !
+
+! Enable the extended coloring options
+rofi.color-enabled: true
+!                  bg       border   separator
+rofi.color-window: my_background, my_color12, my_color12
+!                  bg       fg       bg-alt   hl-bg    hl-fg
+rofi.color-normal: my_background, my_foreground, my_background, my_background, my_color12
+rofi.color-active: my_background, my_foreground, my_background, my_background, my_color12
+rofi.color-urgent: my_background, my_foreground, my_background, my_background, my_color12
+
+rofi.separator-style: solid
+rofi.sidebar-mode: false
+rofi.lines: 5
+rofi.font: monofur 13
+rofi.bw: 1
+rofi.columns: 2
+rofi.padding: 5
+rofi.fixed-num-lines: true
+rofi.hide-scrollbar: true

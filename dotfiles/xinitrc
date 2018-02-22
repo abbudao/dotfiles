@@ -1,0 +1,7 @@
+# [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+#load custom map
+exec i3
+export BROWSER=chromium
+export EDITOR=nvim
+export VISUAL=nvim
+export PATH="${PATH}:/usr/bin/postman"

@@ -1,0 +1,52 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  d_i3:
+    dst: ~/.config/i3
+    src: config/i3
+  d_networkmanager-dmenu:
+    dst: ~/.config/networkmanager-dmenu
+    src: config/networkmanager-dmenu
+  d_polybar:
+    dst: ~/.config/polybar
+    src: config/polybar
+  d_ranger:
+    dst: ~/.config/ranger
+    src: config/ranger
+  d_termite:
+    dst: ~/.config/termite
+    src: config/termite
+  d_wallpaper:
+    dst: ~/.config/Wallpaper
+    src: config/Wallpaper
+  f_compton.conf:
+    dst: ~/.config/compton.conf
+    src: config/compton.conf
+  f_extend.xresources:
+    dst: ~/.extend.Xresources
+    src: extend.Xresources
+  f_xinitrc:
+    dst: ~/.xinitrc
+    src: xinitrc
+  f_xresources:
+    dst: ~/.Xresources
+    src: Xresources
+  f_zshrc:
+    dst: ~/.zshrc
+    src: zshrc
+profiles:
+  Abbud:
+    dotfiles:
+    - d_i3
+    - f_compton.conf
+    - d_polybar
+    - f_xinitrc
+    - f_xresources
+    - f_extend.xresources
+    - f_zshrc
+    - d_wallpaper
+    - d_termite
+    - d_ranger
+    - d_networkmanager-dmenu

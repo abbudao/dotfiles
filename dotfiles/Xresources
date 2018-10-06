@@ -6,8 +6,11 @@
 ! Leave them as they are if a file ~/.extend.Xresources is being used on your system.
 ! config can be added there or also here below.
 ! For comments use "!"
-
+{%@@ if profile == "abbud-chromebook" @@%}
+Xft.dpi: 172
+{%@@ else @@%}
 Xft.dpi: 96
+{%@@ endif @@%}
 Xft.antialias: true
 Xft.hinting: true
 Xft.rgba: rgb

@@ -53,6 +53,19 @@ profiles:
     - d_termite
     - d_ranger
     - d_networkmanager-dmenu
+  abbud-chromebook:
+    dotfiles:
+    - d_manjaro_i3
+    - f_compton.conf
+    - d_polybar
+    - f_xinitrc
+    - f_xresources
+    - f_extend.xresources
+    - f_zshrc
+    - d_wallpaper
+    - d_termite
+    - d_ranger
+    - d_networkmanager-dmenu
   work-pc:
     dotfiles:
     - d_manjaro_i3

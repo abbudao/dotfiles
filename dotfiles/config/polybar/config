@@ -30,7 +30,11 @@ my_color15	= ${xrdb:color15}
 [bar/main_bar]
 ;monitor = ${env:MONITOR:HDMI-1}
 ;monitor = ${env:MONITOR:DVI-D-0}
+{%@@ if profile == "abbud-chromebook" @@%}
+monitor = ${env:MONITOR:eDP1}
+{%@@ else @@%}
 monitor = ${env:MONITOR:DP-0}
+{%@@ endif @@%}
 bottom = false
 width = 100%
 height = 20
@@ -61,8 +65,12 @@ font-2 = FontAwesome:fontformat=truetype:size=9;1
 
 modules-left = i3 xwindow
 modules-center = date
-/* modules-right =battery */
+{%@@ if profile == "abbud-chromebook" @@%}
+modules-right = musicinfo battery keyboard
+{%@@ else @@%}
 modules-right = musicinfo keyboard
+{%@@ endif @@%}
+
 
 tray-position = right
 tray-padding = 9
@@ -134,7 +142,7 @@ label = %date% %time%
 
 [module/battery]
 type = internal/battery
-battery = BAT1
+battery = BAT0
 adapter = AC
 full-at = 99
 

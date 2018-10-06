@@ -85,6 +85,7 @@ alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias vim="nvim"
 alias chrm="chromium"
+alias rr="ranger"
 bindkey -v
 bindkey '^P' up-history
 bindkey '^N' down-history

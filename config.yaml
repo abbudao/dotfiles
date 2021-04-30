@@ -3,6 +3,9 @@ config:
   create: true
   dotpath: dotfiles
 dotfiles:
+  d_doom.d:
+    dst: ../../.doom.d
+    src: doom.d
   d_i3:
     dst: ~/.config/i3
     src: config/i3
@@ -66,6 +69,9 @@ profiles:
     - d_termite
     - d_ranger
     - d_networkmanager-dmenu
+  manjaro:
+    dotfiles:
+    - d_doom.d
   work-pc:
     dotfiles:
     - d_manjaro_i3
